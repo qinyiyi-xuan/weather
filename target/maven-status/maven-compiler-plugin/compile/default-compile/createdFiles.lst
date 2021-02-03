@@ -1,0 +1,6 @@
+com\hzh\utils\GetWeatherUtils.class
+com\hzh\service\WeatherInfoService.class
+com\hzh\service\WeatherInfoServiceImpl.class
+com\hzh\dao\WeatherMapper.class
+com\hzh\pojo\WeatherInfo.class
+com\hzh\controller\WeatherController.class

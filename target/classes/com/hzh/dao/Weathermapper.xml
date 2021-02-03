@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hzh.dao.WeatherMapper">
+
+
+    <select id="getweather" resultType="com.hzh.pojo.WeatherInfo" parameterType="String">
+        select * from weather where search = #{search};
+    </select>
+
+    <insert id="insertWeather" parameterType="com.hzh.pojo.WeatherInfo">
+        insert into weather (search,`index`,date,weather,mintep,maxtep)
+        values(#{search},#{index},#{date},#{weather},#{mintep},#{maxtep});
+    </insert>
+
+</mapper>
